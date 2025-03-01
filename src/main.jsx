@@ -7,8 +7,10 @@ import { Provider } from 'react-redux'
 import store from './redux/store.js'
 import '../src/firebase/firebaseServises/uploadData.js'
 import { AuthProvider } from './Components/AuthProvider.jsx'
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
+   <BrowserRouter basename="/BlossomBreeze">
  <Provider store={store}>
     <AuthProvider>
  <RouterProvider router={router}>
@@ -16,4 +18,5 @@ createRoot(document.getElementById('root')).render(
     </RouterProvider>
     </AuthProvider>
     </Provider>
+    </BrowserRouter>
 )

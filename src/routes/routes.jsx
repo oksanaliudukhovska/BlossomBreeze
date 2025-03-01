@@ -53,7 +53,9 @@ const router = createBrowserRouter([
                 path: '/questions',
                 element: <QandA/>
             }
-        ]
-    }
-])
+        ],
+    },
+],   
+{basename: "/BlossomBreeze"}
+)
 export default router
