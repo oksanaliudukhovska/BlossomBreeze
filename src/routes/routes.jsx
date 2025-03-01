@@ -56,6 +56,6 @@ const router = createBrowserRouter([
         ],
     },
 ],   
-{basename: "/BlossomBreeze"}
+{basename: "/BlossomBreeze/"}
 )
 export default router
