@@ -37,7 +37,11 @@ Other: Axios, React Toastify, Heroicons
 
 📸 Screenshots
 
-Add some screenshots here
+![Bouquets catalog](https://i.postimg.cc/fRfNjjMK/Bouquets-lap-Top.jpg)
+![HomePlants catalog](https://i.postimg.cc/qvTr3ZHq/Plants-lap-Top.jpg)
+![Bouquet iPad](https://i.postimg.cc/BbrhRyBK/Bouquet-i-Pad.jpg)
+![Cart iPad](https://i.postimg.cc/Hs5Hj1KF/Cart-i-Pad.jpg)
+![HomePage mobile](https://i.postimg.cc/kMLqngjx/Home-Page-mobile.jpg)
 
 📜 License
 
