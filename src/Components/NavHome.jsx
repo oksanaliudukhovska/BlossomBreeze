@@ -2,8 +2,16 @@ import React from 'react'
 import plantCenter from '../assets/3262be2f584099c0b67340b356048e9b.jpg';
 import bouquetCenter from '../assets/d0b4402beac07a0847e2517faf713fa0.jpg';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router';
 
 const NavHome = () => {
+    let navigate = useNavigate();
+    const bouquetsHandler = () => {
+        navigate('/bouquets')
+    }
+    const plantsHandler = () => {
+        navigate('/plants')
+    }
     return (
         <div className='w-full py-10 md:py-20'>
             <h2 className='w-full text-center font-corintia text-3xl md:text-4xl text-headerDark/70'>Wonderful gift for every occasion</h2>
@@ -25,7 +33,7 @@ const NavHome = () => {
                         <p >
                             <span className='font-bold font-corintia text-2xl'>A Pleasant Surprise for No Reason </span> – flowers are a simple yet meaningful way to show love and care, even without a special occasion.
                         </p>
-                        <button className='flex justify-center gap-5 py-4 border border-gold/60 w-full uppercase text-sm md:text-base' >Find Your Perfect Bouquet <ArrowRightIcon className='w-6' /></button>
+                        <button onClick={bouquetsHandler} className='flex justify-center gap-5 py-4 border border-gold/60 w-full uppercase text-sm md:text-base' >Find Your Perfect Bouquet <ArrowRightIcon className='w-6' /></button>
                     </div>
                 </div>
                 <div className='bg-white/30 border border-gold/30 w-[360px] md:w-[500px]'>
@@ -37,7 +45,7 @@ const NavHome = () => {
                         <p > <span className='font-bold font-corintia text-2xl'>Enhances Interior Design </span> – Fresh flowers bring warmth and elegance, making any space feel cozy and inviting.</p>
                         <p > <span className='font-bold font-corintia text-2xl'>Boosts Mood </span> – Studies show that flowers have a positive effect on emotions and help reduce stress.</p>
                         <p className='mb-12'> <span className='font-bold font-corintia text-2xl'>Good for Health </span>– Some houseplants purify the air and increase oxygen levels, creating a healthier environment.</p>
-                        <button className='flex justify-center gap-5 py-4 border border-gold/60 w-full uppercase text-sm md:text-base' >Grow Your Indoor Oasis <ArrowRightIcon className='w-6' /></button>
+                        <button onClick={plantsHandler} className='flex justify-center gap-5 py-4 border border-gold/60 w-full uppercase text-sm md:text-base' >Grow Your Indoor Oasis <ArrowRightIcon className='w-6' /></button>
                     </div>
                 </div>
             </div>
