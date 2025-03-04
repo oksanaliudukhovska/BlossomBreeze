@@ -9,7 +9,7 @@ Blossom Breeze is a modern, responsive e-commerce website. The project uses Fire
 
 User authentication (registration & login)
 
-Realtime database for storing bouquets, houseplants, baskets, and user data
+Realtime database for storing bouquets, houseplants, carts, and user data
 
 Firebase Firestore for storing cart data
 
